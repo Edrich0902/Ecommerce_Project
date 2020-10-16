@@ -1,0 +1,121 @@
+.whatWeDoTitle h2
+{
+    text-align: center;
+}
+
+.whatWeDoSteps figure img
+{
+    height: 150px;
+    width: 200px;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+}
+
+.whatWeDoSteps figure
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.whatWeDoSteps figure figcaption
+{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.whatWeDoSteps
+{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.otherApplicationsTitle h2
+{
+    text-align: center;
+}
+
+.otherApplications figure img
+{
+    height: 150px;
+    width: 200px;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px; 
+}
+
+.otherApplications figure
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.otherApplications figure figcaption
+{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.otherApplications
+{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.addInfo
+{
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: center;
+    width: 500px;
+    background: black;
+    color: magenta;
+}
+
+.link
+{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.link a
+{
+    text-decoration: none;
+    color: black;
+    font-family: montserrat;
+    transition: 0.4s ease-in-out;
+}
+
+.link a:hover
+{
+    color: magenta;
+    border-bottom: 1px solid magenta;
+}
+
+@media only screen and (max-width: 800px), only screen and (max-device-width: 800px)
+{
+    .addInfo
+    {
+        width: 300px;
+    }
+}

@@ -1,0 +1,58 @@
+.guideTitle h2
+{
+    text-align: center;
+}
+
+.stepsContainer
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+#forCars h3
+{
+    text-align: center;
+}
+
+#forCars div
+{
+    padding: 15px;
+}
+
+#forClothes h3
+{
+    text-align: center;
+}
+
+#forClothes div
+{
+    padding: 15px;
+}
+
+.stillStuck
+{
+    text-align: center;
+}
+
+.videoContainer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.videoContainer div
+{
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px), only screen and (max-device-width: 800px)
+{
+    .videoContainer
+    {
+        display: block;
+    }
+}

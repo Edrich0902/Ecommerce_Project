@@ -1,0 +1,607 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15 Jul 2020, 7:33:28 PM
+    Author     : Dell
+*/
+@font-face
+{
+    font-family: dancingScript;
+    src: url('/Fonts/Dancing Script/DancingScript-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: montserrat;
+    src: url('/Fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+/*
+**************************
+CREATION OF HAMBURGER MENU
+**************************
+*/
+#main
+{
+    transition: 0.5s ease-in-out;
+}
+
+.sideNav
+{
+    width: 0px;
+    height: 0px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    justify-content: flex-start;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.sideNav span
+{
+    margin: 10px;
+    padding: 10px;
+    color: #F3F3F3;
+    cursor: pointer;
+}
+
+.sideNav span:after
+{
+    display: block;
+    content: '';
+    border-bottom: solid 1px magenta;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+.sideNav span:hover:after
+{
+    transform: scaleX(1);
+}
+
+#menu
+{
+    display: none;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.bar
+{
+    height: 3px;
+    width: 100%;
+    background-color: #F3F3F3;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    text-align: right;
+}
+#bar1
+{
+    transform: translateY(-4px);
+}
+
+#bar3
+{
+    transform: translateY(4px);
+}
+
+.change #bar1
+{
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3
+{
+    transform: translateY(-2px) rotateZ(45deg);
+}
+
+.change #bar2
+{
+    opacity: 0;
+}
+/*
+*********************
+END OF HAMBURGER MENU
+*********************
+*/
+
+
+/*
+***********************
+CUSTOM SCROLLBAR DESIGN
+***********************
+*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: magenta;
+  border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: purple; 
+}
+/*
+***************************
+CUSTOM SCROLLBAR DESIGN END
+***************************
+*/
+
+html
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 12rem;
+    background: #DEDEDE;
+    font-family: montserrat;
+}
+
+.topNav
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    height: 50px;
+    background: #000000;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#profileImg
+{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.navList ul
+{
+    display: flex;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navList ul li
+{
+    display: flex;
+    margin: 15px;
+    padding: 5px;
+    font-family: montserrat;
+    font-size: 14px;
+    color: #F3F3F3;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.navList ul li:hover
+{
+    border-bottom: 1px solid magenta;
+}
+
+.accountInfo
+{
+    justify-content: flex-end;
+    margin-right: 20px;
+    color: #F3F3F3;
+    display: flex;
+    align-items: center;
+    font-family: montserrat;
+    font-size: 14px;
+    transition: 0.4s ease-in-out;
+}
+
+.accountInfo span
+{
+    cursor: pointer;
+}
+
+.title
+{
+    justify-content: center;
+    font-family: dancingScript;
+    font-size: 20px;
+    color: #F3F3F3;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+}
+
+.title span
+{
+    align-self: center;
+}
+
+#signInRegister
+{
+    transition: 0.4s ease-in-out;
+}
+
+#signInRegister:hover
+{
+    color: magenta;
+}
+/*
+***********************
+Profile Options Styling
+***********************
+*/
+.profileOptions
+{
+    color: #F3F3F3;
+    background: #000000;
+    width: 200px;
+    height: 0;
+    right: 0;
+    top: 0;
+    margin-top: 50px;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    justify-content: flex-start;
+    transition: 0.4s;
+}
+
+.profileOptions div
+{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.profileOptions div:after
+{
+    display: block;
+    content: '';
+    border-bottom: solid 1px magenta;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+.profileOptions div:hover:after
+{
+    transform: scaleX(1);
+}
+/*
+***************************
+Profile Options Styling End
+***************************
+*/
+.whatWeOffer h2
+{
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.featuredServices
+{
+    display: flex;
+    justify-content: center;
+}
+
+.featuredServices figure img
+{
+    transition: 0.4s ease-in-out;
+}
+
+.featuredServices figure figcaption:after
+{
+    display: block;
+    content: '';
+    border-bottom: solid 1px black;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+.featuredServices figure:hover img
+{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.featuredServices figure:hover figcaption:after
+{
+    transform: scaleX(1);
+}
+
+.featuredServices figure img
+{
+    height: 150px;
+    width: 200px;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+}
+
+.featuredServices figure figcaption
+{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.featuredServices figure
+{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.productSpotlight h2
+{
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+}
+
+.spotlightProducts
+{
+    display: flex;
+    justify-content: center;
+}
+
+.spotlightProducts figure img
+{
+    transition: 0.4s ease-in-out;
+}
+
+.spotlightProducts figure figcaption:after
+{
+    display: block;
+    content: '';
+    border-bottom: solid 1px black;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+.spotlightProducts figure:hover img
+{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.spotlightProducts figure:hover figcaption:after
+{
+    transform: scaleX(1);
+}
+
+.spotlightProducts figure
+{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.spotlightProducts figure img
+{
+    height: 150px;
+    width: 200px;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+}
+
+.spotlightProducts figure figcaption
+{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.howToUse
+{
+    text-align: center;
+}
+
+.howToSteps
+{
+    display: flex;
+    justify-content: center;
+}
+
+.howToSteps figure img
+{
+    height: 150px;
+    width: 200px;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    transition: 0.4s ease-in-out;
+}
+
+.howToSteps figure
+{
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.howToSteps figure figcaption
+{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.howToSteps figure figcaption:after
+{
+    display: block;
+    content: '';
+    border-bottom: solid 1px black;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+.howToSteps figure:hover img
+{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.howToSteps figure:hover figcaption:after
+{
+    transform: scaleX(1);
+}
+/*
+**************
+FOOTER STYLING
+**************
+*/
+.footer
+{
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    width: 100%;
+    height: 150px;
+    background: black;
+    color: #F3F3F3;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.copyright
+{
+    text-align: center;
+}
+
+.contactUs
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    color: magenta;
+}
+
+.contactUs span
+{
+    margin: 5px;
+}
+
+.footerContactTitle
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 17px;
+    color: #F3F3F3;
+}
+
+#toTopLink
+{
+    text-align: right;
+    margin-right: 10px;
+    text-decoration: none;
+    color: magenta;
+    margin-top: 5px;
+}
+
+#contactUs
+{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/*
+******************
+FOOTER STYLING END
+******************
+*/
+
+/*
+*************
+MEDIA QUERIES
+*************
+*/
+@media only screen and (max-width: 800px), only screen and (max-device-width: 800px)
+{
+    #menu
+    {
+        display: block;
+    }
+    
+    .navList
+    {
+        display: none;
+    }
+    
+    .spotlightProducts
+    {
+        flex-direction: column;
+    }
+    
+    .featuredServices
+    {
+        flex-direction: column;
+    }
+    
+    .howToSteps
+    {
+        display: block;
+    }
+}

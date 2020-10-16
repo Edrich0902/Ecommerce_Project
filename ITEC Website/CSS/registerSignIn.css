@@ -1,0 +1,165 @@
+body
+{
+    padding-bottom: 0;
+}
+
+#registrationTitle
+{
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+
+.registraionContainer
+{
+    width: 50%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.tabs
+{
+    display: flex;
+    justify-content: center;
+    background: black;
+}
+
+.tabs input
+{
+    height: 30px;
+    width: 150px;
+    background: black;
+    font-family: montserrat;
+    color: #F3F3F3;
+    border: none;
+    transition: 0.4s ease-in-out;
+}
+
+.tabs input:hover
+{
+   background: magenta; 
+}
+
+.tabs input.active
+{
+    background: magenta;
+}
+
+body input
+{
+    height: 30px;
+    width: 200px;
+    background: lightgray;
+    border: 1px solid gray;
+    font-family: montserrat;
+    color: #666666;
+}
+
+body input:focus
+{
+    border: 2px solid magenta;
+}
+
+.signIn
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.signIn img
+{
+    height: 25px;
+    width: 25px;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.signIn div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#signInBut
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 235px;
+    color: #F3F3F3;
+    background: magenta;
+    border: none;
+    transition: 0.4s ease-in-out
+}
+
+#signInBut:hover
+{
+    background: purple;
+}
+
+#reg
+{
+    display: none;
+}
+
+.register
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register img
+{
+    height: 25px;
+    width: 25px;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.register div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#registerBut
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 235px;
+    color: #F3F3F3;
+    background: magenta;
+    border: none;
+    transition: 0.4s ease-in-out
+}
+
+#registerBut:hover
+{
+    background: purple;
+}
+
+.registraionContainer form
+{
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px), only screen and (max-device-width: 800px)
+{
+    .registraionContainer
+    {
+        width: 300px;
+    }
+}
