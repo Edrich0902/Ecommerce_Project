@@ -1,0 +1,5 @@
+This project was an individual project for my 3rd Year Subject, Internet Programming and E-commerce. For this project we had to develop an E-commerce website. This website had to have basic E-commerce functionality. Users had to be able to register accounts, sign-in with those accounts, browse products, add products to a cart, and checkout their cart.
+
+MySQL was used to develop and manage the database to which the website connects. PHP was the main language used for the website back-end. HTML, CSS, jQuery, and JavaScript was used to tackle the front-end.
+
+Credit to: https://github.com/kamranahmedse for the jQuery toast messages
